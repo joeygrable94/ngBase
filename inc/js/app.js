@@ -30,9 +30,9 @@ base.config(['$routeProvider', '$locationProvider', function($routeProvider, $lo
 	})
 
 	// CSS GRIDS
-	.when('/css-grids', {
-		templateUrl: 'pages/css-grids.html',
-		controller: 'cssGridController'
+	.when('/gridinator', {
+		templateUrl: 'pages/gridinator.html',
+		controller: 'gridinatorController'
 	})
 	.when('/grid-samples', {
 		templateUrl: 'pages/grid-samples.html',
@@ -89,9 +89,9 @@ base.controller('homeController', ['$scope', '$log', function($scope, $log) {
 
 
 // css grid controller
-base.controller('cssGridController', ['$scope', '$log', function($scope, $log) {
+base.controller('gridinatorController', ['$scope', '$log', function($scope, $log) {
 
-	$scope.name = 'CSS Grid';
+	$scope.name = 'Gridinator';
 	$log.log($scope.name);
 
 }]);
@@ -103,7 +103,7 @@ base.controller('cssGridController', ['$scope', '$log', function($scope, $log) {
 // grid samples controller
 base.controller('gridSamplesController', ['$scope', '$log', function($scope, $log) {
 
-	$scope.name = 'Gridinator';
+	$scope.name = 'Gridinator: samples';
 	$log.log($scope.name);
 
 }]);
@@ -125,10 +125,21 @@ base.controller('typographyController', ['$scope', '$log', function($scope, $log
 
 
 // color me sass controller
-base.controller('colorsController', ['$scope', '$log', function($scope, $log) {
+base.controller('colorsController', ['$scope', '$log', '$http', function($scope, $log, $http) {
 
 	$scope.name = 'Colors';
-	$log.log($scope.name);
+
+	// get colors
+	$http({
+		method: 'GET',
+		url: 'http://localhost:8888/_GIT/ngBase/inc/gridinator/vendors/colors/colors.json'
+	}).then(function successCallback(response) {
+		$scope.status = response.status;
+		$scope.colors = response.data;
+		$log.log($scope.colors);
+	}, function errorCallback(response) {
+		$log.log($scope.colors);
+	});
 
 }]);
 

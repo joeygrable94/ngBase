@@ -8821,6 +8821,8 @@ body::-webkit-scrollbar-thumb {
       color: #ffffff; }
       #window nav#Gridinator a:hover {
         background-color: #404040; }
+      #window nav#Gridinator a.l2 {
+        padding-left: 3.5555555556em; }
   #window #theView {
     justify-self: stretch;
     align-self: stretch;
@@ -9472,7 +9474,7 @@ body::-webkit-scrollbar-thumb {
     grid-column: content-end / col-right;
     grid-row: content-start / content-end; }
 
-.colorMeSass {
+.colors {
   -webkit-display: flex;
   display: flex;
   -webkit-flex-flow: row wrap;
@@ -9484,32 +9486,10 @@ body::-webkit-scrollbar-thumb {
   -webkit-align-content: stretch;
   align-content: stretch;
   padding-left: 2.2222222222em;
-  padding-right: 2.2222222222em; }
-  .colorMeSass > .span-1 {
-    width: 8.3333333333%; }
-  .colorMeSass > .span-2 {
-    width: 16.6666666667%; }
-  .colorMeSass > .span-3 {
-    width: 25%; }
-  .colorMeSass > .span-4 {
-    width: 33.3333333333%; }
-  .colorMeSass > .span-5 {
-    width: 41.6666666667%; }
-  .colorMeSass > .span-6 {
-    width: 50%; }
-  .colorMeSass > .span-7 {
-    width: 58.3333333333%; }
-  .colorMeSass > .span-8 {
-    width: 66.6666666667%; }
-  .colorMeSass > .span-9 {
-    width: 75%; }
-  .colorMeSass > .span-10 {
-    width: 83.3333333333%; }
-  .colorMeSass > .span-11 {
-    width: 91.6666666667%; }
-  .colorMeSass > .span-12 {
-    width: 100%; }
-  .colorMeSass table {
+  padding-right: 2.2222222222em;
+  margin: auto;
+  max-width: 720px; }
+  .colors table {
     -webkit-order: 0;
     order: 0;
     -webkit-align-self: auto;
@@ -9519,6 +9499,8 @@ body::-webkit-scrollbar-thumb {
     border-spacing: 1em; }
 
 .buttons {
-  margin-bottom: 1.7777777778em; }
+  margin-bottom: 1.7777777778em;
+  margin: auto;
+  max-width: 720px; }
 
 /*# sourceMappingURL=gridinator.css.map */
