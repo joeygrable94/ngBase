@@ -1,0 +1,94 @@
+
+<div ng-controller="formsController">
+
+	<div class="title">
+		<h1>{{ name }}</h1>
+	</div>
+
+	<div class="text-box">
+
+		<form>
+			<div class="form-group">
+				<caption>This is a form containing various fields (with some initial values (defaults) set, so that you can see how input text looks like without actually typing it):</caption>
+				<input type="hidden" name="" value="123">
+			</div>
+			<div class="form-group">
+				<label for="">Button:</label>
+				<button name="" class="btn default" type="submit">A cool button</button>
+			</div>
+			<div class="form-group">
+				<label for="">Reset button:</label>
+				<button name="" class="btn default" type="reset">reset</button>
+			</div>
+			<div class="form-group">
+				<label for="">Single-line text input field:</label>
+				<input name="" class="" value="" placeholder="Placeholder text is styled like this.">
+			</div>
+			<div class="form-group">
+				<label for="">Disabled input field:</label>
+				<input name="" class="" value="" placeholder="disabled input" disabled="disabled">
+			</div>
+			<div class="form-group">
+				<label for="">Multi-line text input field (textarea):</label>
+				<textarea name="" rows="5" cols="20">Default text.</textarea>
+			</div>
+			<p>The following two radio buttons are inside a <code>fieldset</code> element with a <code>legend</code>:</p>
+			<fieldset class="form-group">
+				<legend>Legend</legend>
+				<label for="">Radio button 1</label>
+				<input name="" type="radio" value="1">
+				<label for="">Radio button 2 (initially checked)</label>
+				<input name="" type="radio" value="2" checked>
+			</fieldset>
+			<fieldset class="form-group">
+				<legend>Check those that apply</legend>
+				<label for="">Checkbox 1</label>
+				<input name="" type="checkbox">
+				<label for="">Checkbox 2 (initially checked)</label>
+				<input name="" type="checkbox" checked>
+			</fieldset>
+			<div class="form-group">
+				<label for="">label 1:</label>
+				<input name="" type="checkbox" value="">
+				<label for="">label 2:</label>
+				<input name="" type="checkbox" value="">
+				<label for="">label 3:</label>
+				<input name="" type="checkbox" value="">
+				<label for="">label 4:</label>
+				<input name="" type="checkbox" value="">
+			</div>
+			<div class="form-group">
+				<label for="">label 1:</label>
+				<input name="" type="radio" value="">
+				<label for="">label 2:</label>
+				<input name="" type="radio" value="">
+				<label for="">label 3:</label>
+				<input name="" type="radio" value="">
+				<label for="">label 4:</label>
+				<input name="" type="radio" value="">
+			</div>
+			<div class="form-group">
+				<label for="">A <code>select</code> element with <code>size="1"</code> (dropdown box):</label>
+				<select name="" size="1">
+					<option selected>one</option>
+					<option>two (default)</option>
+					<option>three</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="">A <code>select</code> element with <code>size="3"</code>(listbox):</label>
+				<select name="" size="3" multiple="multiple">
+					<option>one</option>
+					<option selected>two (default)</option>
+					<option>three</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="">Submit button:</label>
+				<button name="" type="submit" class="btn default">Just a test</button>
+			</div>
+		</form>
+
+	</div>
+
+</div>
