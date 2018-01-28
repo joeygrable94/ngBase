@@ -8227,6 +8227,30 @@ textarea {
     -ms-transform-origin: center bottom;
     -o-transform-origin: center bottom;
     transform-origin: center bottom; } }
+@font-face {
+  font-family: "akzg-bold";
+  src: url("./AkzidenzGrotesk-Bold.otf") format("opentype");
+  font-style: bold;
+  font-weight: bold;
+  text-rendering: auto; }
+@font-face {
+  font-family: "akzg-light";
+  src: url("./AkzidenzGrotesk-Light.otf") format("opentype");
+  font-style: bold;
+  font-weight: bold;
+  text-rendering: auto; }
+@font-face {
+  font-family: "akzg-light-italic";
+  src: url("./AkzidenzGrotesk-LightItalic.otf") format("opentype");
+  font-style: bold;
+  font-weight: bold;
+  text-rendering: auto; }
+@font-face {
+  font-family: "akzg-super";
+  src: url("./AkzidenzGrotesk-Super.otf") format("opentype");
+  font-style: bold;
+  font-weight: bold;
+  text-rendering: auto; }
 html {
   font-size: 112.5%;
   -webkit-text-size-adjust: 100%;
@@ -8248,7 +8272,7 @@ body {
   min-width: 100%;
   margin: 0;
   padding: 0;
-  font-family: Cambria, "Hoefler Text", Utopia, "Liberation Serif", "Nimbus Roman No9 L Regular", Times, "Times New Roman", serif;
+  font-family: "akzg-light", Helvetica, sans-serif;
   font-weight: 400;
   color: #000000; }
 
@@ -8274,7 +8298,7 @@ h6, .h6 {
   margin-top: 0;
   padding-top: 0;
   padding-bottom: 0;
-  font-family: "Helvetica Neue", Helvetica, Arial, "Liberation Sans", FreeSans, sans-serif;
+  font-family: "akzg-super", Helvetica, sans-serif;
   font-weight: bold; }
 
 h1, .h1 {
@@ -8343,7 +8367,7 @@ blockquote {
   padding-bottom: 0;
   padding-left: 1.7777777778em;
   border-left: 8px solid gray;
-  font-family: Cambria, "Hoefler Text", Utopia, "Liberation Serif", "Nimbus Roman No9 L Regular", Times, "Times New Roman", serif; }
+  font-family: "akzg-light", Helvetica, sans-serif; }
   blockquote p {
     margin-bottom: 0.8888888889em; }
   blockquote footer cite:before {
@@ -8417,10 +8441,10 @@ b {
   font-style: bold; }
 
 .font-base {
-  font-family: Cambria, "Hoefler Text", Utopia, "Liberation Serif", "Nimbus Roman No9 L Regular", Times, "Times New Roman", serif !important; }
+  font-family: "akzg-light", Helvetica, sans-serif !important; }
 
 .font-contrast {
-  font-family: "Helvetica Neue", Helvetica, Arial, "Liberation Sans", FreeSans, sans-serif !important; }
+  font-family: "akzg-super", Helvetica, sans-serif !important; }
 
 abbr {
   font-variant: small-caps;
@@ -8563,7 +8587,7 @@ th, td {
 button, input.btn {
   width: auto;
   display: inline-block;
-  font-family: "Helvetica Neue", Helvetica, Arial, "Liberation Sans", FreeSans, sans-serif;
+  font-family: "akzg-super", Helvetica, sans-serif;
   font-weight: 400;
   text-align: center;
   white-space: nowrap;
@@ -8816,7 +8840,7 @@ body::-webkit-scrollbar-thumb {
       padding-bottom: 0.8888888889em;
       padding-left: 1.7777777778em;
       padding-right: 1.7777777778em;
-      font-family: "Helvetica Neue", Helvetica, Arial, "Liberation Sans", FreeSans, sans-serif;
+      font-family: "akzg-super", Helvetica, sans-serif;
       text-decoration: none;
       color: #ffffff; }
       #window nav#Gridinator a:hover {
