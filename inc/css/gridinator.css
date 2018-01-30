@@ -8229,27 +8229,27 @@ textarea {
     transform-origin: center bottom; } }
 @font-face {
   font-family: "akzg-bold";
-  src: url("./AkzidenzGrotesk-Bold.otf") format("opentype");
+  src: url("../gridinator/fonts/AkzidenzGrotesk-Bold.otf") format("opentype");
   font-style: bold;
   font-weight: bold;
   text-rendering: auto; }
 @font-face {
   font-family: "akzg-light";
-  src: url("./AkzidenzGrotesk-Light.otf") format("opentype");
-  font-style: bold;
-  font-weight: bold;
+  src: url("../gridinator/fonts/AkzidenzGrotesk-Light.otf") format("opentype");
+  font-style: light;
+  font-weight: light;
   text-rendering: auto; }
 @font-face {
   font-family: "akzg-light-italic";
-  src: url("./AkzidenzGrotesk-LightItalic.otf") format("opentype");
-  font-style: bold;
-  font-weight: bold;
+  src: url("../gridinator/fonts/AkzidenzGrotesk-LightItalic.otf") format("opentype");
+  font-style: italic;
+  font-weight: light;
   text-rendering: auto; }
 @font-face {
   font-family: "akzg-super";
-  src: url("./AkzidenzGrotesk-Super.otf") format("opentype");
+  src: url("../gridinator/fonts/AkzidenzGrotesk-Super.otf") format("opentype");
   font-style: bold;
-  font-weight: bold;
+  font-weight: bolder;
   text-rendering: auto; }
 html {
   font-size: 112.5%;
@@ -8302,55 +8302,77 @@ h6, .h6 {
   font-weight: bold; }
 
 h1, .h1 {
-  margin-bottom: 0.1975308642em;
-  font-size: 2.25em;
-  line-height: 1.5802469136; }
+  margin-bottom: 0.2962962963em;
+  font-size: 1.5em;
+  line-height: 1.7777777778;
+  font-family: "akzg-super";
+  font-weight: bolder;
+  font-style: normal; }
   @media (min-width: 43.75em) {
+    h1, .h1 {
+      margin-bottom: 0.1975308642em;
+      font-size: 2.25em;
+      line-height: 1.5802469136; } }
+  @media (min-width: 56.25em) {
     h1, .h1 {
       margin-bottom: 0.1316872428em;
       font-size: 3.375em;
       line-height: 1.316872428; } }
-  @media (min-width: 56.25em) {
-    h1, .h1 {
-      margin-bottom: 0.0877914952em;
-      font-size: 5.0625em;
-      line-height: 1.0534979424; } }
 
 h2, .h2 {
   margin-bottom: 0.2962962963em;
   font-size: 1.5em;
-  line-height: 1.4814814815; }
+  line-height: 1.1851851852;
+  font-family: "akzg-light-italic";
+  font-weight: light;
+  font-style: italic; }
   @media (min-width: 43.75em) {
     h2, .h2 {
       margin-bottom: 0.1975308642em;
       font-size: 2.25em;
-      line-height: 1.1851851852; } }
+      line-height: 0.987654321; } }
   @media (min-width: 56.25em) {
     h2, .h2 {
-      margin-bottom: 0.1316872428em;
-      font-size: 3.375em;
-      line-height: 1.0534979424; } }
+      margin-bottom: 0.1975308642em;
+      font-size: 2.25em;
+      line-height: 1.1851851852; } }
 
 h3, .h3 {
   margin-bottom: 0.2962962963em;
-  font-size: 1.5em;
-  line-height: 1.4814814815; }
+  font-size: 2.25em;
+  line-height: 0.7901234568;
+  font-family: "akzg-bold";
+  font-weight: bold;
+  font-style: normal; }
   @media (min-width: 56.25em) {
     h3, .h3 {
-      margin-bottom: 0.1975308642em;
+      margin-bottom: 0.2962962963em;
       font-size: 2.25em;
       line-height: 1.1851851852; } }
 
 h4, .h4 {
   margin-bottom: 0.2962962963em;
   font-size: 1.5em;
-  line-height: 1.4814814815; }
+  line-height: 1.1851851852;
+  font-family: "akzg-light-italic";
+  font-weight: bold;
+  font-style: italic; }
 
-h5, .h5,
+h5, .h5 {
+  margin-bottom: 0.4444444444em;
+  font-size: 1em;
+  line-height: 0.4444444444;
+  font-family: "akzg-super";
+  font-weight: bolder;
+  font-style: normal; }
+
 h6, .h6 {
   margin-bottom: 0.4444444444em;
   font-size: 1em;
-  line-height: 1.7777777778; }
+  line-height: 0.4444444444;
+  font-family: "akzg-light-italic";
+  font-weight: light;
+  font-style: italic; }
 
 p {
   margin-bottom: 1.7777777778em; }
@@ -8825,8 +8847,8 @@ body::-webkit-scrollbar-thumb {
     align-items: center;
     -webkit-align-content: flex-start;
     align-content: flex-start;
-    max-height: 100vh;
-    max-width: 100vw;
+    height: 100%;
+    width: 100%;
     overflow-y: scroll;
     background-color: #000000; }
     #window nav#Gridinator::-webkit-scrollbar {
@@ -8846,14 +8868,16 @@ body::-webkit-scrollbar-thumb {
       #window nav#Gridinator a:hover {
         background-color: #404040; }
       #window nav#Gridinator a.l2 {
+        padding-left: 2.6666666667em; }
+      #window nav#Gridinator a.l3 {
         padding-left: 3.5555555556em; }
   #window #theView {
     justify-self: stretch;
     align-self: stretch;
     grid-column: 2 / 3;
     grid-row: 1 / 2;
-    max-height: 100vh;
-    max-width: 100vw;
+    height: 100%;
+    width: 100%;
     overflow-y: scroll;
     margin-top: 3.5555555556; }
     #window #theView::-webkit-scrollbar {

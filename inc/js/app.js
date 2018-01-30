@@ -28,6 +28,14 @@ base.config(['$routeProvider', '$locationProvider', function($routeProvider, $lo
 		templateUrl: 'pages/typography.html',
 		controller: 'typographyController'
 	})
+	.when('/type-modular', {
+		templateUrl: 'pages/type-modular.html',
+		controller: 'typographyController'
+	})
+	.when('/type-contrast', {
+		templateUrl: 'pages/type-contrast.html',
+		controller: 'typographyController'
+	})
 
 	// CSS GRIDS
 	.when('/gridinator', {
